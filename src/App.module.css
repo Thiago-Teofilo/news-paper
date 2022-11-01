@@ -1,0 +1,147 @@
+/* Reset */
+
+* {
+	box-sizing: border-box;
+	padding: 0 0;
+	margin: 0 auto;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+/* Variables */
+
+:root {
+	--font: 'EB Garamond', serif;
+	--font-title: 'Playfair Display', serif;
+	--black: #1c1f33;
+	--black--acc: #222;
+	--gray: #eee;
+	--gray-1: #ededed;
+}
+
+/* Fonts / Texts */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,800;1,800&display=swap');
+
+h1,
+h2 {
+	font-family: var(--font-title);
+}
+
+/* header */
+
+header {
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+}
+
+header div {
+	padding: 1px 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+header input {
+	padding: 2px 10px;
+	height: 2rem;
+	width: 50%;
+	border-radius: 3px;
+	box-shadow: 0 0 1rem rgb(0, 0, 0);
+	border: none;
+	z-index: 1000;
+}
+
+/* Body */
+
+.main_title {
+	text-align: center;
+	font-size: 3.5rem;
+	margin: 1rem 0;
+}
+
+body {
+	font-family: var(--font);
+	color: var(--black);
+	overflow-x: hidden;
+}
+
+/* News Paper */
+
+.news_paper {
+	background: url(./imgs/textured-background-white-tone.jpg) repeat;
+	width: 95%;
+	border: 1px var(--black--acc) solid;
+	padding: 1rem 1.5rem;
+	border-radius: 0rem;
+	overflow: hidden;
+	box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+.date_journal {
+	height: 3rem;
+	margin: 10px 0;
+	margin-bottom: 2.5rem;
+	padding: 0.15rem 0;
+	border: var(--black--acc) solid;
+	border-width: 3px 0;
+}
+
+.date_journal ul {
+	border: var(--black--acc) solid;
+	border-width: 1.5px 0;
+	padding-top: 0.5rem;
+	height: 100%;
+}
+
+.date_journal li {
+	width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.mensage {
+	width: 100%;
+	text-align: center;
+	padding: 0 1rem;
+	position: relative;
+	border-bottom: var(--black) 2px solid;
+}
+
+/* Phone */
+
+@media screen and (max-width: 767px) {
+	.news_paper {
+		padding: 10px;
+		width: 99%;
+	}
+
+	.main_title {
+		font-size: 1.5rem;
+	}
+
+	.date_journal {
+		margin-bottom: 1rem;
+		padding: 0.1rem 0;
+		border-width: 2px 0;
+	}
+
+	.date_journal ul {
+		border-width: 1.5px 0;
+		padding-top: 0.4rem;
+	}
+
+	.date_journal li {
+		font-size: 0.7rem;
+	}
+
+	h1 {
+		font-size: 1rem;
+	}
+}
